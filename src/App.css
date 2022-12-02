@@ -1,0 +1,205 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+a {
+    text-decoration: inherit;
+    color:inherit;
+
+}
+html,body{
+	/** to disable horizontal scroll */
+	max-width: 100%;
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+@font-face {
+    font-family: 'darlington';
+    src: url('../public/fonts/darlington-font/DarlingtonDemo-z8xjG.ttf');
+}
+@font-face {
+    font-family: 'josefin';
+    src: url('../public/fonts/josefin-sans/JosefinSans-Light.ttf');
+}
+@font-face {
+    font-family: 'vonique';
+    src: url('../public/fonts/vonique-64/Vonique 64.ttf');
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+}
+.nav-bar{
+    height: 8vh;
+    width: 100vw;
+    background-color:#1A1A1D;
+    text-align: center;
+    color:#4e4e50;
+    /* color:#c3073f; */
+}
+.nav-bar>ul>li{
+    font-family: 'vonique';
+    padding-top: 2.4vh;
+    display: inline-block;
+    width:10vw;
+}
+.style-link{
+    color:inherit;
+    text-decoration: inherit;
+}
+/* .style-link{
+    color: #4e4e50;
+} */
+.active-link{
+    color: #c3073f;
+    /* border-bottom: 2px solid #c3073f;
+    padding-bottom: 2px; */
+}
+.nav-bar>ul>li:hover{
+    color:#c3073f;
+    /* border-bottom: 2px solid #c3073f;
+    padding-bottom: 2px; */
+}
+.content{
+    height: 92vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+.partition-first{
+    background-color: red;
+}
+.tagline{
+    height: 30vh;
+    background-color:#1A1A1D;
+    font-family: 'josefin';
+    font-size: 300%;
+    /* color:#6f2232; */
+    color:#c3073f;
+    padding-top: 3%;
+    padding-left:5%;
+    margin: auto;
+}
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #950740,
+        0 0 82px #950740,
+        0 0 92px #950740,
+        0 0 102px #950740,
+        0 0 151px #950740;
+  }
+  
+  /* h1 {
+    font-size: 4.2rem;
+    animation: flicker 1.5s infinite alternate;     
+  }
+   */
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #950740,
+        0 0 80px #950740,
+        0 0 90px #950740,
+        0 0 100px #950740,
+        0 0 150px #950740;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+#name{
+    font-family: 'darlington';
+    /* color:#c3073f; */
+    color:white;
+    animation: flicker 1.5s infinite alternate; 
+}
+.intro{
+    height: 56vh;
+    overflow: hidden;
+    background-color: #1A1A1D;
+    /* color:#950740; */
+    /* color:#6f2232; */
+    color:#c3073f;
+    font-family: sans-serif;
+    font-size:100%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    padding:10%;
+}
+.socials{
+    height: 6vh;
+    background-color: #1A1A1D;
+}
+.socials>ul>li{
+    display: inline-flex;
+    padding-right: 8%;
+    align-items: center;
+    padding-left:10%;
+    padding-top: 0.5%;
+
+}
+.socials>ul>li>a>img{
+    height: 5vh;
+    padding-left: 90%;
+    /* fill:#950740; */
+    /* filter: invert(18%) sepia(50%) saturate(3678%) hue-rotate(316deg) brightness(82%) contrast(113%); */
+    filter: invert(19%) sepia(15%) saturate(4322%) hue-rotate(309deg) brightness(94%) contrast(97%);
+}
+.socials>ul>li>a>img:hover{
+    /* filter: invert(14%) sepia(88%) saturate(4069%) hue-rotate(332deg) brightness(83%) contrast(105%); */
+    filter: invert(12%) sepia(82%) saturate(4535%) hue-rotate(332deg) brightness(98%) contrast(104%);
+}
+.partition-second{
+    background-color:#1A1A1D;
+}
+#profile-photo{
+    height: 92vh;
+    width:100%;
+}
+.skills{
+    width:100vw;
+    height:92vh;
+    background-color: #1A1A1D;
+    color:#c3073f;
+}
+#skillPhoto{
+    width:30vw;
+    height:90vh;
+    padding-left:5vw;
+    /* width:30vw; */
+    display: inline;
+}
+.skills-des{
+    position: absolute;
+    top:10vh;
+    left:40vw;
+    width:40vw;
+    padding-top: 20vh;
+    /* padding-left: 30vw; */
+    /* padding-right: 30vw; */
+}
+.projects{
+    width:100vw;
+    height:92vh;
+    background-color: #1A1A1D;
+}
+
+.hide{
+    color:#4e4e50;
+    opacity: 0.05;
+}
